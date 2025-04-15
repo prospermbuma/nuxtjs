@@ -1,4 +1,9 @@
 <!-- ===============================================
+# SCRIPT
+=================================================-->
+<script setup lang="ts"></script>
+
+<!-- ===============================================
 # TEMPLATE
 =================================================-->
 <template>
@@ -11,7 +16,7 @@
         <NuxtLink to="/about">About</NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/jobs">Jobs</NuxtLink>
+        <NuxtLink to="/view-jobs">Jobs</NuxtLink>
       </li>
       <li>
         <NuxtLink to="/contact">Contact</NuxtLink>

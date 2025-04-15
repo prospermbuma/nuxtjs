@@ -15,4 +15,7 @@ export default defineNuxtConfig({
     ],
   },
   components: true,
+  imports: {
+    dirs: ['composables'], // if you're using custom composables
+  }
 });

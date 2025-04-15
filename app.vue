@@ -1,12 +1,12 @@
 <!-- ===============================================
-# TEMPLATE
+# TEMPLATE | MAIN LAYOUT
 =================================================-->
 <template>
   <div>
-    <Navbar />
+    <AppNavbar />
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
-    <Footer />
+    <AppFooter />
   </div>
 </template>
