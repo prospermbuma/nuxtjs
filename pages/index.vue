@@ -11,7 +11,7 @@ const name: String = 'Tanzania';
 =================================================-->
 <template>
   <div class="mt-20 flex justify-center items-center flex-col">
-    <div class="text-center bg-blue-50 rounded-2xl p-10 shadow-md">
+    <div class="text-center bg-blue-50 rounded-2xl p-10 shadow">
       <h1 class="text-4xl md:text-8xl">Hello, {{ name }}!</h1>
       <p class="mt-2 text-xl text-blue-500">You are the number {{ num }}</p>
     </div>
