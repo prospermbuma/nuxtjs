@@ -1,7 +1,7 @@
 <!-- ===============================================
 # SCRIPT
 =================================================-->
-<script setup>
+<script setup lang="ts">
 definePageMeta({
     layout: "custom",
 });
