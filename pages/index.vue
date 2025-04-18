@@ -2,9 +2,11 @@
 # SCRIPT
 =================================================-->
 <script setup lang="ts">
+import { useUtils } from '~/composables/useUtils';
 const num: Number = 1;
-const { Greetings } = useUtils();
-const salamu = Greetings('Tanzania');
+const { Greetings, capitaliza } = useUtils();
+const capitalize = capitaliza('Tanzania');
+const salamu = Greetings(capitalize);
 </script>
 
 <!-- ===============================================
