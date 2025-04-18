@@ -1,7 +1,10 @@
 <template>
     <div class="flex flex-col justify-center items-center mt-20">
-        <div class="bg-slate-200 text-slate-600 p-10 md:p-12 rounded-2xl">
+        <div class="bg-slate-200 text-slate-600 p-10 md:p-12 rounded-2xl relative">
             <h1 class="text-2xl md:text-4xl text-center">This is a custom layout</h1>
+            <div class=" absolute top-3 right-3 bg-amber-50 rounded-full p-1">
+                <IconsBell class="text-2xl text-amber-500"/>
+            </div>
         </div>
         <slot />
     </div>

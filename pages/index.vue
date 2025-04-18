@@ -11,9 +11,12 @@ const name: String = 'Tanzania';
 =================================================-->
 <template>
   <div class="mt-20 flex justify-center items-center flex-col">
-    <div class="text-center bg-blue-50 rounded-2xl p-10 shadow">
-      <h1 class="text-4xl md:text-8xl">Hello, {{ name }}!</h1>
-      <p class="mt-2 text-xl text-blue-500">You are the number {{ num }}</p>
+    <div class="text-center bg-blue-50 rounded-2xl p-6 md:p-10 pb-5 md:pb-9 shadow">
+      <h1 class="text-4xl md:text-8xl"> Hello, {{ name }}</h1>
+      <div class="bg-amber-500 rounded-full p-2 h-10 w-10 md:h-15 md:w-15 m-auto mt-4 flex justify-center items-center">
+        <IconsHandWave class="text-2xl md:text-3xl text-amber-50" />
+      </div>
+      <!-- <p class="mt-2 text-xl text-slate-500">You are the number {{ num }}</p> -->
     </div>
   </div>
 </template>
