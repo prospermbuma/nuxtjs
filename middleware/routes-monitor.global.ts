@@ -1,6 +1,6 @@
 import { defineNuxtRouteMiddleware } from "nuxt/app";
 
 export default defineNuxtRouteMiddleware((to, from) => {
-  console.log(`From: ${from.path}`);
-  console.log(`To: ${to.path}`);
+  console.log(`From: ${from.fullPath}`);
+  console.log(`To: ${to.fullPath}`);
 });
