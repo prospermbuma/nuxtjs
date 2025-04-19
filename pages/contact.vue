@@ -7,8 +7,8 @@ import { useAsyncData } from 'nuxt/app';
 const { data: contact } = await useAsyncData(() => queryCollection('content').path('/').first());
 
 useSeoMeta({
-    title: "Salamu | Contact",
-    description: "This is the contact page.",
+    title: `Salamu | ${contact.value?.title}`,
+    description: contact.value?.description,
 });
 </script>
 
