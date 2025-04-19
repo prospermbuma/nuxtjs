@@ -1,0 +1,17 @@
+$primary-color: #283682cc;
+$secondary-color: #f8f6f6;
+$white-color: #fff;
+$black-color: #000;
+
+body {
+    background-color: $white-color;
+}
+
+nav {
+    // background-color: $secondary-color;
+    ul {
+        li {
+            color: $black-color;
+        }
+    }
+}

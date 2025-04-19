@@ -5,6 +5,12 @@
 definePageMeta({
     layout: "custom",
 });
+
+useSeoMeta({
+  title: "Salamu | About",
+  description: "This is the about page.",
+});
+
 </script>
 
 <!-- ===============================================

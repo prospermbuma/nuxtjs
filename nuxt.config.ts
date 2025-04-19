@@ -8,17 +8,13 @@ export default defineNuxtConfig({
   alias: {
     "@": resolve(__dirname, "/"),
   },
-  css: [
-    "~/assets/css/main.css",
-    "~/assets/css/main.scss",
-  ],
+  css: ["~/assets/css/main.css", "~/assets/css/main.scss"],
   vite: {
-    plugins: [
-      tailwindcss(),
-    ],
+    plugins: [tailwindcss()],
   },
   components: true,
   imports: {
-    dirs: ['composables'], // if you're using custom composables
-  }
+    dirs: ["composables"], // if you're using custom composables
+  },
+  modules: ["@nuxt/content"],
 });

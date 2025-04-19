@@ -1,7 +1,12 @@
 <!-- ===============================================
 # SCRIPT
 =================================================-->
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useSeoMeta({
+    title: "Salamu | Contact",
+    description: "This is the contact page.",
+});
+</script>
 
 <!-- ===============================================
 # TEMPLATE

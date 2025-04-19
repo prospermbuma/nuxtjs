@@ -2,11 +2,18 @@
 # SCRIPT
 =================================================-->
 <script setup lang="ts">
+import { useSeoMeta } from 'nuxt/app';
 import { useUtils } from '~/composables/useUtils';
 const num: number = 1;
 const { Greetings, capitaliza } = useUtils();
 const capitalize = capitaliza('Tanzania');
 const salamu = Greetings(capitalize);
+
+useSeoMeta({
+  title: "Salamu",
+  description: "This is the homepage.",
+});
+
 </script>
 
 <!-- ===============================================

@@ -5,6 +5,11 @@
 definePageMeta({
     middleware: "auth",
 });
+
+useSeoMeta({
+    title: "Salamu | Profile",
+    description: "This is the profile page.",
+});
 </script>
 
 <!-- ===============================================

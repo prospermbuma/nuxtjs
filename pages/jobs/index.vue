@@ -1,7 +1,12 @@
 <!-- ===============================================
 # SCRIPT
 =================================================-->
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useSeoMeta({
+  title: "Salamu | Job",
+  description: "This is the job page.",
+});
+</script>
 
 <!-- ===============================================
 # TEMPLATE

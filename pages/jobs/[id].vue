@@ -5,6 +5,11 @@
 const route = useRoute();
 const nuxt = useNuxtApp();
 console.log(nuxt);
+
+useSeoMeta({
+  title: "Salamu | Jobs",
+  description: "This is the jobs page.",
+});
 </script>
 
 <!-- ===============================================
