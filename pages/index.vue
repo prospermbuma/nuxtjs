@@ -3,7 +3,7 @@
 =================================================-->
 <script setup lang="ts">
 import { useUtils } from '~/composables/useUtils';
-const num: Number = 1;
+const num: number = 1;
 const { Greetings, capitaliza } = useUtils();
 const capitalize = capitaliza('Tanzania');
 const salamu = Greetings(capitalize);
