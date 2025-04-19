@@ -3,8 +3,8 @@
 =================================================-->
 <script setup lang="ts">
 useSeoMeta({
-  title: "Salamu | Job",
-  description: "This is the job page.",
+  title: "Salamu | Jobs",
+  description: "This is the jobs page.",
 });
 </script>
 

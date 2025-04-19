@@ -10,7 +10,7 @@ const capitalize = capitaliza('Tanzania');
 const salamu = Greetings(capitalize);
 
 useSeoMeta({
-  title: "Salamu",
+  title: "Salamu - Tanzania",
   description: "This is the homepage.",
 });
 

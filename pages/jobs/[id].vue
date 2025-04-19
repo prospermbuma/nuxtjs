@@ -7,8 +7,8 @@ const nuxt = useNuxtApp();
 console.log(nuxt);
 
 useSeoMeta({
-  title: "Salamu | Jobs",
-  description: "This is the jobs page.",
+  title: "Salamu | Job",
+  description: "This is the job page.",
 });
 </script>
 
