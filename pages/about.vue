@@ -2,13 +2,14 @@
 # SCRIPT
 =================================================-->
 <script setup lang="ts">
+import { useSeoMeta } from 'nuxt/app';
 definePageMeta({
     layout: "custom",
 });
 
 useSeoMeta({
-  title: "Salamu | About",
-  description: "This is the about page.",
+    title: "Salamu | About",
+    description: "This is the about page.",
 });
 
 </script>

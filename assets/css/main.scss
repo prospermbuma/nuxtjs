@@ -8,6 +8,11 @@ body {
     background-color: $white-color;
 }
 
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
 nav {
     // background-color: $secondary-color;
     ul {

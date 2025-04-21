@@ -2,7 +2,7 @@
 # SCRIPT
 =================================================-->
 <script setup lang="ts">
-import { useAsyncData } from 'nuxt/app';
+import { useAsyncData, useSeoMeta } from 'nuxt/app';
 
 const { data: contact } = await useAsyncData(() => queryCollection('content').path('/').first());
 

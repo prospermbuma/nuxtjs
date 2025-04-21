@@ -2,6 +2,7 @@
 # SCRIPT
 =================================================-->
 <script setup lang="ts">
+import { useSeoMeta } from 'nuxt/app';
 useSeoMeta({
   title: "Salamu | Jobs",
   description: "This is the jobs page.",
