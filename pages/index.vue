@@ -7,6 +7,8 @@ import { useUtils } from '~/composables/useUtils';
 import { useColor } from '~/composables/states';
 import { useCounterStore } from '~/stores/counter';
 import { storeToRefs } from 'pinia';
+import { ref, onMounted } from 'vue';
+
 const num: number = 1;
 const { Greetings, capitaliza } = useUtils();
 const capitalize = capitaliza('Tanzania');
@@ -35,6 +37,15 @@ const { increment, setName } = store;
 
 const uname = useState<string>('uname', () => '');
 
+const data = ref(null);
+
+onMounted(async () => {
+  try {
+    data.value = await $fetch('api/test');
+  } catch (err) {
+    console.error('Error fetching test: ', err);
+  }
+});
 </script>
 
 <!-- ===============================================
@@ -81,7 +92,8 @@ const uname = useState<string>('uname', () => '');
       <p>Count: {{ count }}</p>
       <p>Name: {{ name }}</p>
       <p>Double Count: {{ doubleCount }}</p>
-      <input type="text" v-model="uname" placeholder="Name" class="bg-slate-200 py-3 px-5 rounded-xl mt-4 mb-2 outline-0">
+      <input type="text" v-model="uname" placeholder="Name"
+        class="bg-slate-200 py-3 px-5 rounded-xl mt-4 mb-2 outline-0">
       <div class="flex justify-between items-center gap-4">
         <Button
           class="bg-blue-500 text-white px-5 py-2 rounded-xl outline-0 text-md font-bold cursor-pointer w-auto flex justify-center items-center mt-2"
@@ -90,6 +102,8 @@ const uname = useState<string>('uname', () => '');
           class="bg-slate-500 text-white px-5 py-2 rounded-xl outline-0 text-md font-bold cursor-pointer w-auto flex justify-center items-center mt-2"
           @click="setName(uname)">Change</Button>
       </div>
+      <br>
+      {{ data }}
     </div>
   </div>
 </template>

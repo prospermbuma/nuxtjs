@@ -1,5 +1,1 @@
-export default defineEventHandler(async (event) => {
-  return {
-    api: "works",
-  };
-});
+export default defineEventHandler(async (event) => "It works!");
