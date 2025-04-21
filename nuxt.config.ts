@@ -16,5 +16,5 @@ export default defineNuxtConfig({
   imports: {
     dirs: ["composables"], // if you're using custom composables
   },
-  modules: ["@nuxt/content"],
+  modules: ["@nuxt/content", "@pinia/nuxt"],
 });
