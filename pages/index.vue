@@ -50,6 +50,9 @@ onMounted(async () => {
 const { data: yaliyomo } = await useFetch("/api/users");
 const yamo = toRaw(yaliyomo.value);
 console.log(yamo);
+
+const { data: vilivyomo, pending } = await useLazyFetch("/api/users");
+const vimo = toRaw(vilivyomo.value);
 </script>
 
 <!-- ===============================================
@@ -108,6 +111,10 @@ console.log(yamo);
       </div>
       <br>
       {{ data }}
+    </div>
+    <div class="mt-5 p-10 bg-amber-100 w-auto sm:w-1/2 rounded">
+      <h1 class="text-2xl font-extrabold text-slate-700 mb-1">Users:</h1>
+      <p> {{ pending ? 'Loading...' : vimo }}</p>
     </div>
   </div>
 </template>

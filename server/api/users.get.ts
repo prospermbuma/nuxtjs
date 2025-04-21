@@ -1,30 +1,9 @@
+import data from "./users.json";
+
 export default defineEventHandler(async (event) => {
-  return {
-    users: [
-      {
-        id: '1',
-        name: 'victoria mbuma',
-        email: 'victoriambuma@gmail.com',
-        phone: '0783503303'
-      },
-      {
-        id: '2',
-        name: 'prosper mbuma',
-        email: 'prospermbuma@gmail.com',
-        phone: '0716491716',
-      },
-      {
-        id: '3',
-        name: 'joseph mbuma',
-        email: 'josephmbuma@gmail.com',
-        phone: '0682454945',
-      },
-      {
-        id: '4',
-        name: 'gladness mbuma',
-        email: 'gladnessmbuma@gmail.com',
-        phone: '0615345454',
-      },
-    ]
-  };
+  return new Promise<any>((resolve) => {
+    setTimeout(() => {
+      resolve(data);
+    }, 2000);
+  });
 });
