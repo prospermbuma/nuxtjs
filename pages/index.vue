@@ -41,11 +41,15 @@ const data = ref(null);
 
 onMounted(async () => {
   try {
-    data.value = await $fetch('api/test');
+    data.value = await $fetch('/api/test');
   } catch (err) {
     console.error('Error fetching test: ', err);
   }
 });
+
+const { data: yaliyomo } = await useFetch("/api/users");
+const yamo = toRaw(yaliyomo.value);
+console.log(yamo);
 </script>
 
 <!-- ===============================================
