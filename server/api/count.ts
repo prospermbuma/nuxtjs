@@ -1,5 +1,6 @@
 let counter = 0;
-export default () => {
+
+export default eventHandler(() => {
   counter++;
   return JSON.stringify(counter);
-};
+});
