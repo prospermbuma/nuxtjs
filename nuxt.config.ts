@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import tailwindcss from "@tailwindcss/vite";
-// import { resolve } from "path";
+import { resolve } from "path";
 
 export default defineNuxtConfig({
   app: {
@@ -34,8 +34,8 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
   alias: {
-    // "@": resolve(__dirname, "/"),
-    "@": "/<rootDir>",
+    "@": resolve(__dirname, "/"),
+    // "@": "/<rootDir>",
     assets: "/<rootDir>/assets",
     public: "/<rootDir>/public",
   },
