@@ -2,7 +2,17 @@
 # SCRIPT
 =================================================-->
 <script setup>
+import { useHead } from 'nuxt/app';
+import { useRoute } from 'vue-router';
+
+const route = useRoute();
+
+useHead({
+  meta: [{ property: 'og:title', content: `${route.meta.title}` }]
+});
+
 const { $salamu } = useNuxtApp();
+
 </script>
 
 <!-- ===============================================

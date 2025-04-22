@@ -1,4 +1,4 @@
-# Get In Touch
+# Contact
 
 Kindly reach us through:
 <br>

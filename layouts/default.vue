@@ -6,9 +6,10 @@ import { useHead } from 'nuxt/app';
 import { useRoute } from 'vue-router';
 
 const route = useRoute();
+
 useHead({
   meta: [{ property: 'og:title', content: `${route.meta.title}` }]
-})
+});
 </script>
 
 <!-- ===============================================
@@ -16,8 +17,6 @@ useHead({
 =================================================-->
 <template>
     <div>
-        <!-- <AppNavbar /> -->
         <slot />
-        <!-- <AppFooter /> -->
     </div>
 </template>

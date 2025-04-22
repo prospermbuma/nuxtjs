@@ -4,7 +4,7 @@
 <script setup lang="ts">
 import { useSeoMeta } from 'nuxt/app';
 
-// Layout Definition
+// Meta
 definePageMeta({
     layout: "custom",
 });
@@ -12,7 +12,9 @@ definePageMeta({
 // SEO
 useSeoMeta({
     title: "Salamu | About",
+    ogTitle: "Salamu | About",
     description: "This is the about page.",
+    ogDescription: "This is the about page.",
 });
 
 </script>

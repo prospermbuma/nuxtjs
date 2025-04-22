@@ -10,7 +10,9 @@ definePageMeta({
 // SEO
 useSeoMeta({
     title: "Salamu | Profile",
+    ogTitle: "Salamu | Profile",
     description: "This is the profile page.",
+    ogDescription: "This is the profile page.",
 });
 </script>
 

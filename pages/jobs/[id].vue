@@ -10,7 +10,9 @@ const route = useRoute();
 // SEO
 useSeoMeta({
   title: "Salamu | Job",
+  ogTitle: "Salamu | Job",
   description: "This is the job page.",
+  ogDescription: "This is the job page.",
 });
 </script>
 
