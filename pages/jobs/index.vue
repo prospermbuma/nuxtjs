@@ -2,10 +2,11 @@
 # SCRIPT
 =================================================-->
 <script setup lang="ts">
-import { title } from 'process';
+
+const jina = ref('Salamu | Jobs');
 // SEO  
 definePageMeta({
-  title: 'Salamu | Jobs',
+  title: jina,
 })
 // import { useSeoMeta } from 'nuxt/app';
 // SEO
@@ -23,7 +24,7 @@ definePageMeta({
     <!-- SEO (Component Based SEO) -->
 
     <Head>
-      <Title>{{ title }}</Title>
+      <Title>{{ jina }}</Title>
       <Meta name="description" content="This is the jobs page." />
       <Meta property="og:description" content="This is the jobs page." />
       <Style>
