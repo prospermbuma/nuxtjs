@@ -3,10 +3,13 @@
 =================================================-->
 <script setup lang="ts">
 import { useSeoMeta } from 'nuxt/app';
+
+// Layout Definition
 definePageMeta({
     layout: "custom",
 });
 
+// SEO
 useSeoMeta({
     title: "Salamu | About",
     description: "This is the about page.",

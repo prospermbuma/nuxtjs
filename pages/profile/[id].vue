@@ -7,6 +7,7 @@ definePageMeta({
     middleware: "auth",
 });
 
+// SEO
 useSeoMeta({
     title: "Salamu | Profile",
     description: "This is the profile page.",

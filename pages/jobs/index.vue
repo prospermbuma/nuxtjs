@@ -2,17 +2,27 @@
 # SCRIPT
 =================================================-->
 <script setup lang="ts">
-import { useSeoMeta } from 'nuxt/app';
-useSeoMeta({
-  title: "Salamu | Jobs",
-  description: "This is the jobs page.",
-});
+// import { useSeoMeta } from 'nuxt/app';
+// SEO
+// useSeoMeta({
+//   title: "Salamu | Jobs",
+//   description: "This is the jobs page.",
+// });
 </script>
 
 <!-- ===============================================
 # TEMPLATE
 =================================================-->
 <template>
+  <div>
+    <!-- SEO (Component Based SEO) -->
+
+    <Head>
+      <Title>Salamu | Jobs</Title>
+      <Meta name="description" content="This is the jobs page." />
+    </Head>
+
+  </div>
   <div class="flex justify-center mt-20">
     <ul class="text-xl text-blue-400">
       <li>

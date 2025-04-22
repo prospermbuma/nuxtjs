@@ -6,6 +6,7 @@ import { useAsyncData, useSeoMeta } from 'nuxt/app';
 
 const { data: contact } = await useAsyncData(() => queryCollection('content').path('/').first());
 
+// SEO
 useSeoMeta({
     title: `Salamu | ${contact.value?.title}`,
     description: contact.value?.description,

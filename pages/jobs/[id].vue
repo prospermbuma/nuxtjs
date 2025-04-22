@@ -4,9 +4,10 @@
 <script setup lang="ts">
 import { useSeoMeta, useRoute, useNuxtApp } from 'nuxt/app';
 const route = useRoute();
-const nuxt = useNuxtApp();
-console.log(nuxt);
+// const nuxt = useNuxtApp();
+// console.log(nuxt);
 
+// SEO
 useSeoMeta({
   title: "Salamu | Job",
   description: "This is the job page.",

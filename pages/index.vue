@@ -2,21 +2,25 @@
 # SCRIPT
 =================================================-->
 <script setup lang="ts">
-import { useSeoMeta, useState } from 'nuxt/app';
+import { useAsyncData, useFetch, useLazyFetch, useSeoMeta, useState } from 'nuxt/app';
 import { useUtils } from '~/composables/useUtils';
 import { useColor } from '~/composables/states';
 import { useCounterStore } from '~/stores/counter';
 import { storeToRefs } from 'pinia';
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, toRaw } from 'vue';
 
 const num: number = 1;
 const { Greetings, capitaliza } = useUtils();
 const capitalize = capitaliza('Tanzania');
 const salamu = Greetings(capitalize);
 
+// SEO
 useSeoMeta({
-  title: "Salamu - Tanzania",
-  description: "This is the homepage.",
+  title: "Salamu TZ",
+  ogTitle: 'Salamu TZ',
+  description: "Salamu Tanzania App",
+  ogDescription: 'Salamu Tanzania App',
+  ogImage: 'https://example.com/image.png'
 });
 
 // ======= State Management =======
@@ -39,6 +43,7 @@ const uname = useState<string>('uname', () => '');
 
 const data = ref(null);
 
+// $fetch
 onMounted(async () => {
   try {
     data.value = await $fetch('/api/test');
@@ -47,12 +52,17 @@ onMounted(async () => {
   }
 });
 
+// useFetch
 const { data: yaliyomo } = await useFetch("/api/users");
 const yamo = toRaw(yaliyomo.value);
 console.log(yamo);
 
+// useLazyFetch
 const { data: vilivyomo, pending } = await useLazyFetch("/api/users");
 const vimo = toRaw(vilivyomo.value);
+
+// useAsyncData
+const { data: visits } = useAsyncData('count', () => $fetch('/api/count'));
 </script>
 
 <!-- ===============================================
@@ -116,5 +126,7 @@ const vimo = toRaw(vilivyomo.value);
       <h1 class="text-2xl font-extrabold text-slate-700 mb-1">Users:</h1>
       <p> {{ pending ? 'Loading...' : vimo }}</p>
     </div>
+    <br>
+    Page visits: {{ visits }}
   </div>
 </template>
